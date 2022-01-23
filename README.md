@@ -1,9 +1,9 @@
 # Team Profile Generator
 
-Author: Michael Iringan
-Created: 1/13/22
-Modified: 1/23/22
-Active Link: To be filled in later.
+Author: Michael Iringan <br>
+Created: 1/13/22 <br>
+Modified: 1/23/22 <br>
+Active Link: https://drive.google.com/file/d/1IsUfqkEhK90wM-w0UpWqqxQq0w5b6WJf/view?usp=sharing <br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
