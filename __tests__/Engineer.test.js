@@ -1,9 +1,9 @@
+// Import Engineer class
 const Engineer = require('../lib/Engineer');
 
 describe("Engineer", () => {
 
-    // Methods
-
+    // Initialization test
     describe("Initialization / Constructor", () => {
         // Positive Test
         it("Should create an object with properties name, ID, and email set to their respective arguments when called with the 'new' keyword", () => {
@@ -24,7 +24,7 @@ describe("Engineer", () => {
 
         });
 
-        // Exception Tests
+        // Exception tests for blank string responses
         it("Should throw an error if not provided a name value", () => {
             // Arrange
             const cb = () => new Engineer("", "123", "example@example.com", "githubname");
@@ -67,6 +67,7 @@ describe("Engineer", () => {
 
     });
 
+    // Test for getGithub function
     describe("getGithub", () => {
 
         it("Should return the github value of the Employee object", () => {
@@ -84,6 +85,7 @@ describe("Engineer", () => {
 
     });
 
+    // Test for getRole function
     describe("getRole", () => {
 
         it("Should return the Role value of the Employee object", () => {

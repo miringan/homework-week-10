@@ -1,9 +1,9 @@
+// Import Employee class
 const Employee = require('../lib/Employee');
 
 describe("Employee", () => {
 
-    // Methods
-
+    // Initialization test
     describe("Initialization / Constructor", () => {
         // Positive Test
         it("Should create an object with properties name, ID, and email set to their respective arguments when called with the 'new' keyword", () => {
@@ -22,7 +22,7 @@ describe("Employee", () => {
 
         });
 
-        // Exception Tests
+        // Exception tests for blank string responses
         it("Should throw an error if not provided a name value", () => {
             // Arrange
             const cb = () => new Employee("", "123", "example@example.com");
@@ -55,6 +55,7 @@ describe("Employee", () => {
 
     });
 
+    // Test for getName function
     describe("getName", () => {
 
         it("Should return the name value of the Employee object", () => {
@@ -72,6 +73,7 @@ describe("Employee", () => {
 
     });
 
+    // Test for getId function
     describe("getId", () => {
 
         it("Should return the id value of the Employee object", () => {
@@ -89,6 +91,7 @@ describe("Employee", () => {
 
     });
 
+    // Test for getEmail function
     describe("getEmail", () => {
 
         it("Should return the email value of the Employee object", () => {
@@ -106,6 +109,7 @@ describe("Employee", () => {
 
     });
 
+    // Test for getRole function
     describe("getRole", () => {
 
         it("Should return the Role value of the Employee object", () => {

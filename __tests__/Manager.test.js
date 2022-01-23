@@ -1,9 +1,9 @@
+// Import Manager class
 const Manager = require('../lib/Manager');
 
 describe("Manager", () => {
 
-    // Methods
-
+    // Initialization test
     describe("Initialization / Constructor", () => {
         // Positive Test
         it("Should create an object with properties name, ID, and email set to their respective arguments when called with the 'new' keyword", () => {
@@ -24,7 +24,7 @@ describe("Manager", () => {
 
         });
 
-        // Exception Tests
+        // Exception tests for blank string responses
         it("Should throw an error if not provided a name value", () => {
             // Arrange
             const cb = () => new Manager("", "123", "example@example.com", "121");
@@ -67,6 +67,7 @@ describe("Manager", () => {
 
     });
 
+    // Test for getOfficeNumber function
     describe("getOfficeNumber", () => {
 
         it("Should return the officeNumber value of the Employee object", () => {
@@ -84,6 +85,7 @@ describe("Manager", () => {
 
     });
 
+    // Test for getRole function
     describe("getRole", () => {
 
         it("Should return the Role value of the Employee object", () => {

@@ -1,9 +1,9 @@
+// Import Intern class
 const Intern = require('../lib/Intern');
 
 describe("Intern", () => {
 
-    // Methods
-
+    // Initialization test
     describe("Initialization / Constructor", () => {
         // Positive Test
         it("Should create an object with properties name, ID, and email set to their respective arguments when called with the 'new' keyword", () => {
@@ -24,7 +24,7 @@ describe("Intern", () => {
 
         });
 
-        // Exception Tests
+        // Exception tests for blank string responses
         it("Should throw an error if not provided a name value", () => {
             // Arrange
             const cb = () => new Intern("", "123", "example@example.com", "uw");
@@ -67,6 +67,7 @@ describe("Intern", () => {
 
     });
 
+    // Test for getSchool function
     describe("getSchool", () => {
 
         it("Should return the school value of the Employee object", () => {
@@ -84,6 +85,7 @@ describe("Intern", () => {
 
     });
 
+    // Test for getRole function
     describe("getRole", () => {
 
         it("Should return the Role value of the Employee object", () => {
