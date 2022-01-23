@@ -1,14 +1,31 @@
 module.exports = {generateHtml};
-let htmlText = [];
 
 function generateHtml(company) {
-    // parse the company array
-    for (const [key, value] of company) {
 
-    }
+    return `<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css" />
+        <title>Michael Iringan Portfolio</title>
+    </head>
     
-    // add a div to the HTML code for each object in array
+    <body>
+        <!-- Nav Bar -->
+        <div class="container d-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">My Team</a>
+            </nav>
+        </div>
     
-    // return the text
-    return `${htmlText.join("").toString()}`
+        <!-- Team -->
+        <div class="row d-flex justify-content-center">
+            ${company.join("")}
+        <div>
+    </body>
+    </html>
+    `
 }
